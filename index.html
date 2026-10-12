@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marishel Balao | IT Professional, Web &amp; System Developer</title>
+  <meta name="description" content="Portfolio of Marishel Balao, an IT professional building practical web applications, database-driven systems, and reliable IT solutions.">
+  <meta name="theme-color" content="#120b0d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23a52a42'/%3E%3Ctext x='32' y='43' font-size='28' font-weight='700' text-anchor='middle' fill='%23ffffff' font-family='Arial,sans-serif'%3EMB%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <!-- Loaded in the head (not deferred) so the saved theme is applied before the page paints. -->
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- SVG icon sprite: every icon on the page references one of these symbols -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></symbol>
+    <symbol id="i-package" viewBox="0 0 24 24"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+    <symbol id="i-lifebuoy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></symbol>
+    <symbol id="i-router" viewBox="0 0 24 24"><rect x="2" y="14" width="20" height="7" rx="2"/><line x1="6" y1="17.5" x2="6.01" y2="17.5"/><line x1="10" y1="17.5" x2="10.01" y2="17.5"/><path d="M12 14V9"/><path d="M8.5 8.5a5 5 0 0 1 7 0"/><path d="M5.5 5.5a9 9 0 0 1 13 0"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="nav__brand" href="#home" aria-label="Marishel Balao, back to home">
+        <span class="nav__logo" aria-hidden="true">MB</span>
+        <span class="nav__name">Marishel Balao</span>
+      </a>
+
+      <nav class="nav__menu" id="primary-nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#services">Services</a></li>
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-button theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme">
+          <svg class="icon theme-toggle__moon" aria-hidden="true" focusable="false"><use href="#i-moon"></use></svg>
+          <svg class="icon theme-toggle__sun" aria-hidden="true" focusable="false"><use href="#i-sun"></use></svg>
+        </button>
+        <button class="icon-button nav__toggle" id="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home" tabindex="-1" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__title" id="hero-title">Marishel Balao</h1>
+          <p class="hero__role">IT Professional | Web &amp; System Developer | Database &amp; Network Support</p>
+          <p class="hero__typing">
+            <span class="sr-only">Specialties: Web &amp; System Developer, Database Developer, Network Support, IT Professional.</span>
+            <span class="hero__typed" id="typed-text" aria-hidden="true">Web &amp; System Developer</span><span class="hero__cursor" aria-hidden="true"></span>
+          </p>
+          <p class="hero__intro">Building practical web applications, database-driven systems, and reliable IT solutions.</p>
+
+          <div class="hero__buttons">
+            <a class="btn btn--primary" href="#projects">VIEW MY WORK</a>
+            <a class="btn btn--ghost" href="#contact">CONTACT ME</a>
+          </div>
+
+          <div class="hero__footer">
+            <ul class="social" aria-label="Social links">
+              
+              <li><a class="social__link" href="https://github.com/balaoomashel-cell" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"></use></svg></a></li>
+              <li><a class="social__link" href="https://www.facebook.com/share/1PzsmdUzfx/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"></use></svg></a></li>
+              <li><a class="social__link" href="https://www.linkedin.com/in/balao-marishel-872439443" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"></use></svg></a></li>
+            </ul>
+            <p class="hero__location">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"></use></svg>
+              Belance, Dupax del Norte, Nueva Vizcaya, Philippines
+            </p>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <svg class="hero-visual" viewBox="0 0 440 400" role="img" aria-labelledby="hv-title hv-desc">
+            <title id="hv-title">Technology stack diagram</title>
+            <desc id="hv-desc">A browser interface connects to PHP application logic, which connects to a MySQL database, a router and LAN, and an Ubuntu server.</desc>
+            <rect class="hv-panel" x="10" y="10" width="420" height="380" rx="24"/>
+            <circle class="hv-dot" cx="38" cy="38" r="5"/>
+            <circle class="hv-dot" cx="56" cy="38" r="5"/>
+            <circle class="hv-dot" cx="74" cy="38" r="5"/>
+            <text class="hv-sub" x="104" y="42">stack.overview</text>
+
+            <path class="hv-line" d="M190 112 H250"/>
+            <path class="hv-line" d="M325 140 V200"/>
+            <path class="hv-line" d="M250 228 H190"/>
+            <path class="hv-line" d="M115 200 V140"/>
+            <path class="hv-line" d="M115 256 V344 H145"/>
+            <path class="hv-line" d="M325 256 V344 H295"/>
+
+            <g>
+              <rect class="hv-node" x="40" y="84" width="150" height="56" rx="14"/>
+              <text class="hv-title" x="56" y="108">Browser UI</text>
+              <text class="hv-sub" x="56" y="126">HTML, CSS, JS</text>
+            </g>
+            <g>
+              <rect class="hv-node" x="250" y="84" width="150" height="56" rx="14"/>
+              <text class="hv-title" x="266" y="108">PHP</text>
+              <text class="hv-sub" x="266" y="126">Application logic</text>
+            </g>
+            <g>
+              <rect class="hv-node hv-node--accent" x="250" y="200" width="150" height="56" rx="14"/>
+              <text class="hv-title" x="266" y="224">MySQL</text>
+              <text class="hv-sub" x="266" y="242">Data and queries</text>
+            </g>
+            <g>
+              <rect class="hv-node" x="40" y="200" width="150" height="56" rx="14"/>
+              <text class="hv-title" x="56" y="224">Router and LAN</text>
+              <text class="hv-sub" x="56" y="242">NAT, DHCP</text>
+            </g>
+            <g>
+              <rect class="hv-node" x="145" y="316" width="150" height="56" rx="14"/>
+              <text class="hv-title" x="161" y="340">Ubuntu Server</text>
+              <text class="hv-sub" x="161" y="358">Apache, XAMPP</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section section--alt" id="about" tabindex="-1" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section__header reveal" data-reveal="up">
+          <h2 class="section__title" id="about-title">About me</h2>
+          <p class="section__lead">Practical technology for real day-to-day operations.</p>
+        </div>
+
+        <div class="about">
+          <div class="about__text reveal" data-reveal="left">
+            <p>I am an IT professional with hands-on experience in web development, database management, system development, computer networking, and technical support.</p>
+            <p>I enjoy developing practical technology solutions that solve real-world problems. My experience includes creating database-driven applications, developing administrative systems, working with PHP and MySQL, building HTML/CSS/JavaScript interfaces, and configuring computer networks.</p>
+            <p>I also have experience working with Windows-based environments, local servers, XAMPP, MySQL, PHP, and network infrastructure. I focus on creating systems that are simple to use, reliable, maintainable, and suitable for actual day-to-day operations.</p>
+            <p>I continuously improve my skills by working on practical projects and exploring new technologies in web development, databases, networking, and IT systems.</p>
+
+            <dl class="facts">
+              <div class="facts__row"><dt>Based in</dt><dd>Belance, Dupax del Norte, Nueva Vizcaya, Philippines</dd></div>
+              <div class="facts__row"><dt>Focus</dt><dd>Web, database, and system development</dd></div>
+              <div class="facts__row"><dt>Environments</dt><dd>Windows, XAMPP, Ubuntu Server</dd></div>
+              <div class="facts__row"><dt>Works with</dt><dd>PHP, MySQL, Visual Basic 6, LAN and router setups</dd></div>
+            </dl>
+          </div>
+
+          <div class="about__side reveal" data-reveal="right">
+            <div class="profile-card glass">
+              <div class="profile-card__top">
+                <span class="profile-card__avatar">
+                  <span class="profile-card__initials" aria-hidden="true">MB</span>
+                  <img class="profile-card__photo" src="assets/images/profile.jpg" alt="Marishel Balao" width="160" height="160" loading="eager">
+                </span>
+                <div>
+                  <p class="profile-card__name">Marishel Balao</p>
+                  <p class="profile-card__role">IT Professional</p>
+                </div>
+              </div>
+              <ul class="profile-card__list">
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"></use></svg>Web &amp; system development</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-database"></use></svg>Database design and administration</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-share"></use></svg>Networking and server setup</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lifebuoy"></use></svg>Hardware and software troubleshooting</li>
+              </ul>
+            </div>
+
+            <div class="stats" id="stats">
+              <div class="stat glass">
+                <p class="stat__value"><span data-counter data-target="5">5</span>+</p>
+                <p class="stat__label">Technology Areas</p>
+              </div>
+              <div class="stat glass">
+                <p class="stat__value"><span data-counter data-target="6">6</span>+</p>
+                <p class="stat__label">Featured Projects</p>
+              </div>
+              <div class="stat glass">
+                <p class="stat__value"><span data-counter data-target="10">10</span>+</p>
+                <p class="stat__label">Development &amp; IT Skills</p>
+              </div>
+              <div class="stat glass">
+                <p class="stat__value">Multiple</p>
+                <p class="stat__label">Practical IT Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="strengths">
+          <h3 class="strengths__title reveal" data-reveal="up">Professional strengths</h3>
+          <ul class="strengths__list">
+            <li class="strength reveal" data-reveal="scale"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-tool"></use></svg>Practical Problem Solving</li>
+            <li class="strength reveal" data-reveal="scale"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lifebuoy"></use></svg>System Troubleshooting</li>
+            <li class="strength reveal" data-reveal="scale"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-database"></use></svg>Database Development</li>
+            <li class="strength reveal" data-reveal="scale"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-target"></use></svg>Logical Thinking</li>
+            <li class="strength reveal" data-reveal="scale"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-search"></use></svg>Technical Analysis</li>
+            <li class="strength reveal" data-reveal="scale"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-book"></use></svg>Continuous Learning</li>
+            <li class="strength reveal" data-reveal="scale"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"></use></svg>System Reliability</li>
+            <li class="strength reveal" data-reveal="scale"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-monitor"></use></svg>Software and Hardware Troubleshooting</li>
+            <li class="strength reveal" data-reveal="scale"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg>Practical IT Solutions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section" id="skills" tabindex="-1" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section__header reveal" data-reveal="up">
+          <h2 class="section__title" id="skills-title">Skills</h2>
+          <p class="section__lead">The tools and areas I work with most. The bars show where my practical hands-on time goes; they are not certified or verified ratings.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass reveal" data-reveal="up">
+            <div class="skill-card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-globe"></use></svg></span>
+              <h3 class="skill-card__title">Web Development</h3>
+            </div>
+            <ul class="chips">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>UI Development</li><li>Form Validation</li><li>Interactive Web Interfaces</li>
+            </ul>
+            <div class="meter" aria-hidden="true"><span class="meter__fill meter__fill--high"></span></div>
+            <p class="meter__label">Hands-on focus: high</p>
+          </article>
+
+          <article class="skill-card glass reveal" data-reveal="up">
+            <div class="skill-card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-database"></use></svg></span>
+              <h3 class="skill-card__title">Backend &amp; Database</h3>
+            </div>
+            <ul class="chips">
+              <li>PHP</li><li>MySQL</li><li>SQL</li><li>CRUD Operations</li><li>Database Design</li><li>Database Relationships</li><li>JOIN Queries</li><li>Subqueries</li><li>Aggregate Functions</li><li>GROUP BY</li><li>HAVING</li><li>SQL Triggers</li><li>Database Backup and Recovery</li>
+            </ul>
+            <div class="meter" aria-hidden="true"><span class="meter__fill meter__fill--high"></span></div>
+            <p class="meter__label">Hands-on focus: high</p>
+          </article>
+
+          <article class="skill-card glass reveal" data-reveal="up">
+            <div class="skill-card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"></use></svg></span>
+              <h3 class="skill-card__title">System Development</h3>
+            </div>
+            <ul class="chips">
+              <li>Information Management Systems</li><li>CRUD Applications</li><li>Administrative Systems</li><li>Database-Driven Applications</li><li>System Automation</li><li>Command-line Tools</li><li>Visual Basic 6 Application Development</li>
+            </ul>
+            <div class="meter" aria-hidden="true"><span class="meter__fill meter__fill--mid"></span></div>
+            <p class="meter__label">Hands-on focus: regular</p>
+          </article>
+
+          <article class="skill-card glass reveal" data-reveal="up">
+            <div class="skill-card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-share"></use></svg></span>
+              <h3 class="skill-card__title">Networking</h3>
+            </div>
+            <ul class="chips">
+              <li>TCP/IP</li><li>IPv4</li><li>DHCP</li><li>NAT</li><li>Router Configuration</li><li>LAN Configuration</li><li>Basic Network Troubleshooting</li><li>Network Topology</li><li>Inbound / Outbound Traffic</li><li>Home and Small-Office Networks</li>
+            </ul>
+            <div class="meter" aria-hidden="true"><span class="meter__fill meter__fill--mid"></span></div>
+            <p class="meter__label">Hands-on focus: regular</p>
+          </article>
+
+          <article class="skill-card glass reveal" data-reveal="up">
+            <div class="skill-card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lifebuoy"></use></svg></span>
+              <h3 class="skill-card__title">IT Support</h3>
+            </div>
+            <ul class="chips">
+              <li>Windows Troubleshooting</li><li>Hardware and Software Troubleshooting</li><li>Local Server Setup</li><li>XAMPP</li><li>Apache</li><li>MySQL</li><li>phpMyAdmin</li><li>Ubuntu Server</li><li>Linux Administration</li><li>Remote Administration</li>
+            </ul>
+            <div class="meter" aria-hidden="true"><span class="meter__fill meter__fill--high"></span></div>
+            <p class="meter__label">Hands-on focus: high</p>
+          </article>
+
+          <article class="skill-card glass reveal" data-reveal="up">
+            <div class="skill-card__head">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-package"></use></svg></span>
+              <h3 class="skill-card__title">Development Tools</h3>
+            </div>
+            <ul class="chips">
+              <li>Visual Studio</li><li>Visual Basic 6</li><li>PHP</li><li>MySQL</li><li>XAMPP</li><li>phpMyAdmin</li><li>Git</li><li>GitHub</li><li>VS Code</li>
+            </ul>
+            <div class="meter" aria-hidden="true"><span class="meter__fill meter__fill--high"></span></div>
+            <p class="meter__label">Hands-on focus: high</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section section--alt" id="projects" tabindex="-1" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__header reveal" data-reveal="up">
+          <h2 class="section__title" id="projects-title">Projects</h2>
+          <p class="section__lead">Six practical projects across web, database, system, and networking work.</p>
+        </div>
+
+        <div class="filters reveal" data-reveal="up" role="group" aria-label="Filter projects by category">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">ALL</button>
+          <button class="filter" type="button" data-filter="web" aria-pressed="false">WEB</button>
+          <button class="filter" type="button" data-filter="database" aria-pressed="false">DATABASE</button>
+          <button class="filter" type="button" data-filter="system" aria-pressed="false">SYSTEM</button>
+          <button class="filter" type="button" data-filter="networking" aria-pressed="false">NETWORKING</button>
+        </div>
+        <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!--
+            Project links: put your real URL inside data-project-link="" on the
+            "View Project" and "Source Code" buttons. While empty, the buttons
+            show a friendly notice instead of opening a broken page.
+          -->
+
+          <article class="project glass reveal" data-reveal="up" data-category="system web">
+            <div class="project__visual project__visual--1" aria-hidden="true">
+              <svg class="icon project__icon" focusable="false"><use href="#i-bell"></use></svg>
+            </div>
+            <div class="project__body">
+              <p class="project__category">System, Web</p>
+              <h3 class="project__title">Announcement Management System</h3>
+              <p class="project__desc">A database-driven announcement system designed to automatically deliver scheduled announcements.</p>
+              <ul class="project__features">
+                <li>One-time, daily, and weekly announcements</li>
+                <li>Automatic, real-time announcement detection</li>
+                <li>Text-to-speech with female voice support</li>
+                <li>MP3 announcements, music playback, and a PHP admin panel</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>VB6</li><li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>XAMPP</li>
+              </ul>
+              <div class="project__actions">
+                <button class="btn btn--small btn--primary" type="button" data-project-link="" data-project="Announcement Management System" data-kind="project">View Project</button>
+                <button class="btn btn--small btn--ghost" type="button" data-project-link="" data-project="Announcement Management System" data-kind="source code">Source Code</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal" data-reveal="up" data-category="system database">
+            <div class="project__visual project__visual--2" aria-hidden="true">
+              <svg class="icon project__icon" focusable="false"><use href="#i-terminal"></use></svg>
+            </div>
+            <div class="project__body">
+              <p class="project__category">System, Database</p>
+              <h3 class="project__title">Student Management CRUD System</h3>
+              <p class="project__desc">A command-line based student management system designed for basic school information management.</p>
+              <ul class="project__features">
+                <li>Add, search, update, and delete student records</li>
+                <li>MySQL database connection</li>
+                <li>Separate command-line modules</li>
+                <li>Configurable XAMPP/MySQL installation path</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>MySQL</li><li>SQL</li><li>Windows CMD</li><li>Batch Scripting</li>
+              </ul>
+              <div class="project__actions">
+                <button class="btn btn--small btn--primary" type="button" data-project-link="" data-project="Student Management CRUD System" data-kind="project">View Project</button>
+                <button class="btn btn--small btn--ghost" type="button" data-project-link="" data-project="Student Management CRUD System" data-kind="source code">Source Code</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal" data-reveal="up" data-category="web">
+            <div class="project__visual project__visual--3" aria-hidden="true">
+              <svg class="icon project__icon" focusable="false"><use href="#i-sliders"></use></svg>
+            </div>
+            <div class="project__body">
+              <p class="project__category">Web</p>
+              <h3 class="project__title">Web-Based Announcement Administration System</h3>
+              <p class="project__desc">A PHP/MySQL administrative interface for managing and scheduling announcements.</p>
+              <ul class="project__features">
+                <li>Add, schedule, and type announcements</li>
+                <li>Enable or disable announcements</li>
+                <li>Start and end dates with repeat schedules</li>
+                <li>Message management and MP3 upload</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>PHP</li><li>MySQL</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>XAMPP</li>
+              </ul>
+              <div class="project__actions">
+                <button class="btn btn--small btn--primary" type="button" data-project-link="" data-project="Web-Based Announcement Administration System" data-kind="project">View Project</button>
+                <button class="btn btn--small btn--ghost" type="button" data-project-link="" data-project="Web-Based Announcement Administration System" data-kind="source code">Source Code</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal" data-reveal="up" data-category="database">
+            <div class="project__visual project__visual--4" aria-hidden="true">
+              <svg class="icon project__icon" focusable="false"><use href="#i-database"></use></svg>
+            </div>
+            <div class="project__body">
+              <p class="project__category">Database</p>
+              <h3 class="project__title">MySQL Database Management System</h3>
+              <p class="project__desc">A collection of practical database solutions demonstrating SQL development and database management.</p>
+              <ul class="project__features">
+                <li>INNER, LEFT, and RIGHT JOINs with subqueries</li>
+                <li>Aggregate functions, GROUP BY, and HAVING</li>
+                <li>CASE and IF statements, SQL triggers, and logging</li>
+                <li>Automated database backup</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>MySQL</li><li>SQL</li><li>PHP</li><li>Windows CMD</li>
+              </ul>
+              <div class="project__actions">
+                <button class="btn btn--small btn--primary" type="button" data-project-link="" data-project="MySQL Database Management System" data-kind="project">View Project</button>
+                <button class="btn btn--small btn--ghost" type="button" data-project-link="" data-project="MySQL Database Management System" data-kind="source code">Source Code</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal" data-reveal="up" data-category="networking">
+            <div class="project__visual project__visual--5" aria-hidden="true">
+              <svg class="icon project__icon" focusable="false"><use href="#i-router"></use></svg>
+            </div>
+            <div class="project__body">
+              <p class="project__category">Networking</p>
+              <h3 class="project__title">Network Infrastructure &amp; Troubleshooting</h3>
+              <p class="project__desc">A practical networking project focused on router-to-router communication, NAT, IP addressing, and network troubleshooting.</p>
+              <ul class="project__features">
+                <li>ISP connection, WAN and LAN interfaces</li>
+                <li>NAT with private and public IP addresses</li>
+                <li>Router-to-router communication and network segmentation</li>
+                <li>Ping troubleshooting and inbound/outbound traffic</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>TCP/IP</li><li>IPv4</li><li>NAT</li><li>Routers</li><li>LAN</li>
+              </ul>
+              <div class="project__actions">
+                <button class="btn btn--small btn--primary" type="button" data-project-link="" data-project="Network Infrastructure and Troubleshooting" data-kind="project">View Project</button>
+                <button class="btn btn--small btn--ghost" type="button" data-project-link="" data-project="Network Infrastructure and Troubleshooting" data-kind="source code">Source Code</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal" data-reveal="up" data-category="system networking">
+            <div class="project__visual project__visual--6" aria-hidden="true">
+              <svg class="icon project__icon" focusable="false"><use href="#i-server"></use></svg>
+            </div>
+            <div class="project__body">
+              <p class="project__category">System, Networking</p>
+              <h3 class="project__title">Ubuntu Server &amp; Web Hosting Environment</h3>
+              <p class="project__desc">A Linux-based server environment for hosting web and database applications.</p>
+              <ul class="project__features">
+                <li>Apache, PHP, MySQL, and phpMyAdmin on Ubuntu Server</li>
+                <li>Static IP configuration and LAN server access</li>
+                <li>Database and remote administration</li>
+                <li>Server automation</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>Ubuntu Server</li><li>Apache</li><li>PHP</li><li>MySQL</li><li>phpMyAdmin</li><li>Linux</li>
+              </ul>
+              <div class="project__actions">
+                <button class="btn btn--small btn--primary" type="button" data-project-link="" data-project="Ubuntu Server and Web Hosting Environment" data-kind="project">View Project</button>
+                <button class="btn btn--small btn--ghost" type="button" data-project-link="" data-project="Ubuntu Server and Web Hosting Environment" data-kind="source code">Source Code</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section section--services" id="services" tabindex="-1" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__header reveal" data-reveal="up">
+          <h2 class="section__title" id="services-title">Services</h2>
+          <p class="section__lead">What I can build, set up, and keep running for you.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service glass reveal" data-reveal="up">
+            <span class="icon-badge icon-badge--large"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"></use></svg></span>
+            <h3 class="service__title">Web Development</h3>
+            <p class="service__desc">Responsive, accessible websites and interfaces built with HTML5, CSS3, and JavaScript, including form validation and interactive features.</p>
+          </article>
+          <article class="service glass reveal" data-reveal="up">
+            <span class="icon-badge icon-badge--large"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-database"></use></svg></span>
+            <h3 class="service__title">Database Development</h3>
+            <p class="service__desc">Well-structured MySQL databases with relationships, JOIN queries, subqueries, aggregates, and triggers that fit how your data is actually used.</p>
+          </article>
+          <article class="service glass reveal" data-reveal="up">
+            <span class="icon-badge icon-badge--large"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"></use></svg></span>
+            <h3 class="service__title">System Development</h3>
+            <p class="service__desc">Database-driven CRUD and administrative systems in PHP/MySQL and Visual Basic that handle day-to-day operations reliably.</p>
+          </article>
+          <article class="service glass reveal" data-reveal="up">
+            <span class="icon-badge icon-badge--large"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-router"></use></svg></span>
+            <h3 class="service__title">Network Setup</h3>
+            <p class="service__desc">Home and small-office LAN configuration, router setup, IP addressing, DHCP, and NAT, with clear troubleshooting when connections fail.</p>
+          </article>
+          <article class="service glass reveal" data-reveal="up">
+            <span class="icon-badge icon-badge--large"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lifebuoy"></use></svg></span>
+            <h3 class="service__title">IT Support</h3>
+            <p class="service__desc">Windows, hardware, and software troubleshooting, plus local server setup with XAMPP, Apache, and phpMyAdmin.</p>
+          </article>
+          <article class="service glass reveal" data-reveal="up">
+            <span class="icon-badge icon-badge--large"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"></use></svg></span>
+            <h3 class="service__title">Database Administration</h3>
+            <p class="service__desc">Backup and recovery routines, database logging, and ongoing maintenance to keep your MySQL databases dependable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section class="section section--alt" id="experience" tabindex="-1" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section__header reveal" data-reveal="up">
+          <h2 class="section__title" id="experience-title">Experience</h2>
+          <p class="section__lead">Hands-on experience developing and maintaining practical IT solutions involving web applications, databases, networking, and desktop systems.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal" data-reveal="left">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__card glass">
+              <h3 class="timeline__title">IT / System Development</h3>
+              <p>Developing and maintaining practical IT solutions that combine web applications, databases, networking, and desktop systems.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal="right">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__card glass">
+              <h3 class="timeline__title">Web &amp; Database Development</h3>
+              <p>Building PHP/MySQL applications with HTML, CSS, and JavaScript interfaces, including CRUD systems, administrative panels, and SQL development.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal="left">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__card glass">
+              <h3 class="timeline__title">Networking &amp; Infrastructure</h3>
+              <p>Configuring LANs, routers, NAT, and IP addressing, and troubleshooting connectivity with practical tools like ping.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal="right">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__card glass">
+              <h3 class="timeline__title">Server Administration</h3>
+              <p>Setting up and administering local and Ubuntu servers with Apache, PHP, MySQL, and phpMyAdmin, including remote administration.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-reveal="left">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__card glass">
+              <h3 class="timeline__title">Practical IT Projects</h3>
+              <p>Delivering system automation, command-line tools, database backups, and everyday technical support for Windows hardware and software.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="key-areas reveal" data-reveal="up">
+          <h3 class="key-areas__title">Key areas</h3>
+          <ul class="chips">
+            <li>Web application development</li><li>PHP/MySQL development</li><li>Database management</li><li>SQL development</li><li>CRUD system development</li><li>Network configuration</li><li>Computer troubleshooting</li><li>Server administration</li><li>System automation</li><li>Technical support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="section" id="education" tabindex="-1" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section__header reveal" data-reveal="up">
+          <h2 class="section__title" id="education-title">Education</h2>
+        </div>
+
+        <!-- Add your school, program, and years here when you are ready to share them. -->
+        <article class="education glass reveal" data-reveal="up">
+          <span class="icon-badge icon-badge--large"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-book"></use></svg></span>
+          <div>
+            <h3 class="education__title">Information Technology / Computer-related Education</h3>
+            <p class="education__lead">Areas of study</p>
+            <ul class="education__list">
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>Programming</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>Database Management</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>Web Development</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>Computer Networking</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>System Development</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>Computer Hardware and Software</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>Information Technology</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section section--alt" id="contact" tabindex="-1" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__info reveal" data-reveal="left">
+          <h2 class="section__title" id="contact-title">Let's Work Together</h2>
+          <p class="section__lead">Have a project, system, website, database, or IT problem that needs a practical solution?</p>
+
+          <ul class="contact__list">
+            <li class="contact__item">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"></use></svg></span>
+              <div>
+                <p class="contact__label">Email</p>
+                <p class="contact__value"><a class="contact__link" href="mailto:balaoomashel@gmail.com">balaoomashel@gmail.com</a></p>
+              </div>
+            </li>
+            <li class="contact__item">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"></use></svg></span>
+              <div>
+                <p class="contact__label">Phone</p>
+                <p class="contact__value"><a class="contact__link" href="tel:09704846817">09704846817</a></p>
+              </div>
+            </li>
+            <li class="contact__item">
+              <span class="icon-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"></use></svg></span>
+              <div>
+                <p class="contact__label">Location</p>
+                <p class="contact__value">Belance, Dupax del Norte, Nueva Vizcaya, Philippines</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact__form-wrap glass reveal" data-reveal="right">
+          <form class="form" id="contact-form" novalidate aria-labelledby="form-title">
+            <h3 class="form__title" id="form-title">Send a message</h3>
+
+            <div class="field">
+              <label class="field__label" for="contact-name">Name</label>
+              <input class="field__input" type="text" id="contact-name" name="name" data-validate="name" autocomplete="name" aria-required="true" aria-describedby="contact-name-error">
+              <p class="field__error" id="contact-name-error"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="contact-email">Email</label>
+              <input class="field__input" type="email" id="contact-email" name="email" data-validate="email" autocomplete="email" aria-required="true" aria-describedby="contact-email-error">
+              <p class="field__error" id="contact-email-error"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="contact-subject">Subject</label>
+              <input class="field__input" type="text" id="contact-subject" name="subject" data-validate="subject" aria-required="true" aria-describedby="contact-subject-error">
+              <p class="field__error" id="contact-subject-error"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="contact-message">Message</label>
+              <textarea class="field__input field__input--area" id="contact-message" name="message" rows="5" data-validate="message" aria-required="true" aria-describedby="contact-message-hint contact-message-error"></textarea>
+              <p class="field__hint" id="contact-message-hint">Minimum 20 characters.</p>
+              <p class="field__error" id="contact-message-error"></p>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-send"></use></svg>
+              Send Message
+            </button>
+
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer">
+      <div class="footer__brand">
+        <p class="footer__name">Marishel Balao</p>
+        <p class="footer__role">IT Professional | Web &amp; System Developer | Database &amp; Network Support</p>
+      </div>
+      <ul class="social" aria-label="Social links">
+        <li><a class="social__link" href="https://github.com/balaoomashel-cell" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"></use></svg></a></li>
+        <li><a class="social__link" href="https://www.facebook.com/share/1PzsmdUzfx/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"></use></svg></a></li>
+        <li><a class="social__link" href="https://www.linkedin.com/in/balao-marishel-872439443" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"></use></svg></a></li>
+      </ul>
+    </div>
+    <div class="container footer__bottom">
+      <p class="footer__copy">&copy; 2026 Marishel Balao. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-up"></use></svg>
+  </button>
+
+  <div class="toast-region" id="toast-region" role="status" aria-live="polite" aria-atomic="false"></div>
+
+</body>
+</html>
